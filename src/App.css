@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2.4rem;
+    color: #16b7f2;
+}
+
+.purple {
+    color: #6900ff;
+}
+
+#head-coin {
+    padding-left: 10px;
+}

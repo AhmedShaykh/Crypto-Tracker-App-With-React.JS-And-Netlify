@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Coins from './Components/Coins';
+import Navbar from './Components/Navbar';
 
 function App() {
 
   const [coins, setCoins] = useState([]);
 
-  const api = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false";
+  const api = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false";
 
   useEffect(() => {
     axios.get(api).then((response) => {
       setCoins(response.data)
-      console.log(response.data)
+      console.log(response.data[0])
     }).catch((error) => {
       console.log(error)
     })
@@ -19,9 +21,8 @@ function App() {
 
   return (
     <>
-      <h1>
-        Crypto Tracker App With React.JS!
-      </h1>
+      <Navbar />
+      <Coins coins={coins}/>
     </>
   );
 }
