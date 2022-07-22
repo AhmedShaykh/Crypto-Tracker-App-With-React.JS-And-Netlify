@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <FaBitcoin className='icon' />
-            <h1 id='head-coin'>Coin <span className='purple'>Market </span>Cap</h1>
+            <h1>Coin <span className='purple'>Market </span>Cap</h1>
         </div>
     )
 }
