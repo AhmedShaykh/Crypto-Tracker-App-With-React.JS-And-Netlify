@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import Coins from './Components/Coins';
+import { Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar';
+import Coins from './Components/Coins';
+import Coin from './Routes/Coin';
 
 function App() {
 
@@ -13,7 +15,6 @@ function App() {
   useEffect(() => {
     axios.get(api).then((response) => {
       setCoins(response.data)
-      console.log(response.data[0])
     }).catch((error) => {
       console.log(error)
     })
@@ -22,7 +23,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Coins coins={coins}/>
+      <Routes>
+        <Route path='/' element={<Coins coins={coins} />} />
+        <Route path='/coin' element={<Coin />}>
+          <Route path=':coinId' element={<Coin />} />
+        </Route>
+      </Routes>
     </>
   );
 }
