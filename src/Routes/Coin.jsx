@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 
 const Coin = () => {
 
@@ -19,7 +20,7 @@ const Coin = () => {
 
     return (
         <div>
-            <div className="coin-contain">
+            <div className="coin-container">
                 <div className="content">
                     <h1>{coin.name}</h1>
                 </div>
@@ -86,6 +87,16 @@ const Coin = () => {
                                 {coin.market_data ? <p>{coin.market_data.circulating_supply}</p> : null}
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="content">
+                    <div className="about">
+                        <h3>About</h3>
+                        <p dangerouslySetInnerHTML={{
+                            __html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),
+                        }}>
+                        </p>
                     </div>
                 </div>
             </div>
