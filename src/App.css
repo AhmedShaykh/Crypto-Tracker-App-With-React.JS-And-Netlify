@@ -76,6 +76,14 @@ img {
     color: #6900ff;
 }
 
+.red {
+    color: #f50505;
+}
+  
+.green {
+    color: #0be044;
+}
+
 .coin-container .content {
     max-width: 740px;
     margin: 1rem auto;
@@ -177,5 +185,31 @@ th {
 
     .rank-btn {
         margin: .5rem 0;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .info .coin-price{
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info .coin-price{
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .info .coin-price{
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .coin-container .content {
+        max-width: 100%;
+        margin: .3rem;
+        padding: 0 .5rem;
     }
 }
