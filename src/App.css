@@ -53,9 +53,11 @@ img {
     .hide-mobile {
         display: none;
     }
+
     .heading {
         margin: 1rem 1rem;
     }
+
     .coin-row {
         margin: 2rem 1rem;
     }
@@ -79,7 +81,7 @@ img {
 .red {
     color: #f50505;
 }
-  
+
 .green {
     color: #0be044;
 }
@@ -132,7 +134,8 @@ table {
     margin: .5rem 0;
 }
 
-td, th {
+td,
+th {
     padding: 8px;
     text-align: center;
 }
@@ -175,7 +178,8 @@ th {
         grid-template-columns: 1fr;
     }
 
-    td,th {
+    td,
+    th {
         padding: 3px;
     }
 
@@ -189,19 +193,19 @@ th {
 }
 
 @media screen and (max-width: 418px) {
-    .info .coin-price{
+    .info .coin-price {
         font-size: 14px !important;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .info .coin-price{
+    .info .coin-price {
         font-size: 12px !important;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .info .coin-price{
+    .info .coin-price {
         font-size: 10px !important;
     }
 }
