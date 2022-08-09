@@ -22,7 +22,7 @@ const Coin = () => {
         <div>
             <div className="coin-container">
                 <div className="content">
-                    <h1>{coin.name}</h1>
+                    <h1>{coin.name?.toUpperCase()}</h1>
                 </div>
                 <div className="content">
                     <div className="rank">
