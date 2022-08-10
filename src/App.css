@@ -62,12 +62,14 @@ img {
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 1rem;
+        padding: 0rem 1rem;
     }
 
     .coin-row {
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 2rem;
+        padding: .3rem 1rem;
     }
 }
 
