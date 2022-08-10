@@ -7,7 +7,7 @@ const Navbar = () => {
         <Link to='/'>
             <div className='navbar'>
                 <FaBitcoin className='icon' />
-                <h1>Coin<span className='cyan'>Market</span>Cap</h1>
+                <h1 className='main-head'>Coin<span className='cyan'>Market</span>Cap</h1>
             </div>
         </Link>
     )
