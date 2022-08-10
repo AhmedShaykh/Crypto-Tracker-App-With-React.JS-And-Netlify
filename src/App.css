@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #0A0A0A;
-    box-shadow: 0px 0px 12px #212121;
+    box-shadow: 0px 0px 12px #313131;
     border-radius: 8px;
     margin: 2rem 3rem;
     padding: .7rem 1rem;
@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #0A0A0A;
-    box-shadow: 0px 0px 12px #212121;
+    box-shadow: 0px 0px 12px #313131;
     border-radius: 8px;
     font-size: 1rem;
     margin: 2rem 3rem;
@@ -72,7 +72,8 @@ img {
 
 .icon {
     font-size: 2.4rem;
-    color: #16b7f2;
+    color: #00f08c;
+    margin-left: 1.4rem;
 }
 
 .cyan {
@@ -94,12 +95,12 @@ img {
     display: flex;
     flex-direction: column;
     background-color: #0A0A0A;
-    box-shadow: 0px 0px 12px #212121;
+    box-shadow: 0px 0px 12px #313131;
     border-radius: 8px;
 }
 
 .rank {
-    margin: .5 0;
+    margin-top: .5rem;
 }
 
 .rank-btn {
@@ -174,22 +175,18 @@ th {
         margin: .5rem;
         padding: 0 .5rem;
     }
-
     .stats {
         grid-template-columns: 1fr;
     }
-
     td,
     th {
         padding: 3px;
     }
-
     .rank {
-        margin: .5rem;
+        margin-top: 1rem;
     }
-
     .rank-btn {
-        margin: .5rem 0;
+        margin-top: .5rem;
     }
 }
 
@@ -208,6 +205,12 @@ th {
 @media screen and (max-width: 380px) {
     .info .coin-price {
         font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .info .coin-price {
+        font-size: 9.5px !important;
     }
 }
 
