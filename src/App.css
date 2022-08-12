@@ -133,8 +133,9 @@ img {
 .info .coin-heading {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
-    font-size: 1rem;
+    margin: 1rem;
+    /* padding-left: ;     */
+    font-size: 2rem;
 }
 
 .info .coin-price {
