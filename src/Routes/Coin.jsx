@@ -24,7 +24,7 @@ const Coin = () => {
                 <div className="content">
                     <h1>{coin.name?.toUpperCase()}</h1>
                 </div>
-                <div className="content">
+                <div className="content-head">
                     <div className="rank">
                         <span className="rank-btn">Rank # {coin.market_cap_rank}</span>
                     </div>

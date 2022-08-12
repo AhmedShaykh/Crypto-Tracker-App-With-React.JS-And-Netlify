@@ -113,8 +113,20 @@ img {
     border-radius: 8px;
 }
 
+.coin-container .content-head {
+    max-width: 740px;
+    margin: 1rem auto;
+    padding: .7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0A0A;
+    box-shadow: 0px 0px 12px #313131;
+    border-radius: 8px;
+}
+
 .rank {
-    margin-top: .5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .rank-btn {
@@ -134,8 +146,7 @@ img {
     display: flex;
     align-items: center;
     margin: 1rem;
-    /* padding-left: ;     */
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .info .coin-price {
@@ -204,10 +215,6 @@ th {
 
     .rank {
         margin-top: 1rem;
-    }
-
-    .rank-btn {
-        margin-top: .5rem;
     }
 }
 
