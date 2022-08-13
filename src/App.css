@@ -198,7 +198,7 @@ th {
 }
 
 @media screen and (max-width: 700px) {
-    .coin-container .content {
+    .coin-container {
         max-width: 100%;
         margin: .5rem;
         padding: 0 .5rem;
@@ -219,43 +219,26 @@ th {
 }
 
 @media screen and (max-width: 418px) {
-    .info .coin-price {
-        font-size: 0.898rem;
-    }
-
-    .info .coin-heading {
-        font-size: 0.898rem;
-        ;
-    }
-
+    
     .main-head {
         font-size: 2.1rem;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .info .coin-price {
-        font-size: 0.828rem;
-    }
-
-    .info .coin-heading {
-        font-size: 0.828rem;
-        ;
-    }
 
     .main-head {
         font-size: 1.9rem;
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 600px) {
     .info .coin-price {
-        font-size: 0.769rem;
+        font-size: 0.8rem;
     }
 
     .info .coin-heading {
-        font-size: 0.769rem;
-        ;
+        font-size: 1.4rem;
     }
 }
 
@@ -264,5 +247,15 @@ th {
         max-width: 100%;
         margin: .3rem;
         padding: 0 .5rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .info .coin-price {
+        font-size: 0.7rem;
+    }
+
+    .info .coin-heading {
+        font-size: 1.29rem;
     }
 }
