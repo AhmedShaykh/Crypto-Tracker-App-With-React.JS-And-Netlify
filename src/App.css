@@ -146,14 +146,14 @@ img {
     display: flex;
     align-items: center;
     margin: 1rem;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
 }
 
 .info .coin-price {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .info p {
@@ -219,14 +219,12 @@ th {
 }
 
 @media screen and (max-width: 418px) {
-    
     .main-head {
         font-size: 2.1rem;
     }
 }
 
 @media screen and (max-width: 400px) {
-
     .main-head {
         font-size: 1.9rem;
     }
@@ -257,5 +255,26 @@ th {
 
     .info .coin-heading {
         font-size: 1.29rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .rank {
+        margin-top: 0.6rem;
+        padding-left: 0.4rem;
+    }
+
+    .info {
+        padding-left: 0.5rem;
+    }
+    
+    .info .coin-price {
+        font-size: 0.59rem;
+        padding-right: 1rem;
+    }
+
+    .info .coin-heading {
+        font-size: 1.067rem;
+        margin-right: 0.27rem;
     }
 }
